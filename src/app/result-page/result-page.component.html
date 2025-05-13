@@ -1,0 +1,30 @@
+<section>
+  <div>
+    <h2>You Picked</h2>
+    <app-icon-container
+      [isWon]="
+        isWon && showResult && this.userSelection !== this.computerSelection
+      "
+      [className]="userSelection"
+      [imageName]="'icon-' + userSelection + '.svg'"
+    />
+  </div>
+  <div id="result" *ngIf="showResult">
+    <h1 *ngIf="this.userSelection !== this.computerSelection">
+      {{ isWon ? "You win" : "you lose" }}
+    </h1>
+    <div role="button" (click)="handleTryAgain()">play again</div>
+  </div>
+  <div>
+    <h2>The House Picked</h2>
+    <app-icon-container
+      [isWon]="
+        !isWon && showResult && this.userSelection !== this.computerSelection
+      "
+      *ngIf="!showBlankCircle"
+      [className]="computerSelection"
+      [imageName]="'icon-' + computerSelection + '.svg'"
+    />
+    <div id="blank-circle" *ngIf="showBlankCircle"></div>
+  </div>
+</section>

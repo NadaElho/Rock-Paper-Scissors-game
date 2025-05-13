@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-repeat: no-repeat;
+}
+
+app-game .icon-container#scissors {
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+app-game .icon-container#paper {
+  left: 100%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+
+app-game .icon-container#rock {
+  left: 85%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+
+app-game .icon-container#lizard {
+  left: 25%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+
+app-game .icon-container#spock {
+  left: 0;
+  top: 30%;
+  transform: translateX(-50%);
+}
+
+section .icon-container {
+  position: relative !important;
+  width: 220px !important;
+  height: 220px !important;
+}
+
+section .icon {
+  width: 170px !important;
+  height: 170px !important;
+}
+
+section img {
+  width: 65px !important;
+}
+
+@media (max-width: 767px) {
+  section .icon-container {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  section .icon {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  section img {
+    width: 50px !important;
+  }
+}
