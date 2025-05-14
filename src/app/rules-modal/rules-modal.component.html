@@ -1,8 +1,13 @@
-<div class="overlay">
-  <div class="box">
+<div class="overlay" (click)="hideModal()">
+  <div class="box" (click)="$event.stopPropagation()">
     <div>
       <span>Rules</span>
-      <img src="assets/images/icon-close.svg" alt="" id="close" (click)="hideModal()"/>
+      <img
+        src="assets/images/icon-close.svg"
+        alt=""
+        id="close"
+        (click)="hideModal()"
+      />
     </div>
     <img src="assets/images/image-rules-bonus.svg" alt="" />
   </div>
