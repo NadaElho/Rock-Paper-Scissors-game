@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]([https://github.com/NadaElho/Conference-ticket-generator](https://rockpaperscissorsgame-taupe.vercel.app/))
+- [Solution URL]([https://github.com/NadaElho/Conference-ticket-generator](https://rockpaperscissorsgame-taupe.vercel.app/)
 - [Live Site URL](https://conference-ticket-generator-hosting.vercel.app)
 
 ## My process
